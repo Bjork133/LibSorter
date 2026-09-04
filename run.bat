@@ -1,4 +1,4 @@
-windows_script = '''@echo off
+@echo off
 setlocal enabledelayedexpansion
 
 :: Check if CMake is installed
@@ -114,9 +114,3 @@ goto menu
 :exit_program
 echo Goodbye!
 exit /b 0
-'''
-
-with open('launch_windows.bat', 'w', encoding='utf-8') as f:
-    f.write(windows_script)
-
-print("Windows script created: launch_windows.bat")
