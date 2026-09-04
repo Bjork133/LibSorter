@@ -1,4 +1,4 @@
-unix_script = '''#!/bin/bash
+#!/bin/bash
 
 # Function to check if a command exists
 command_exists() {
@@ -171,10 +171,6 @@ while true; do
         *) echo "Invalid choice. Please try again."; sleep 2 ;;
     esac
 done
-'''
-
-with open('launch_unix.sh', 'w', encoding='utf-8') as f:
-    f.write(unix_script)
 
 print("Unix script created: launch_unix.sh")
 print("\nNote: Make the script executable with: chmod +x launch_unix.sh")
